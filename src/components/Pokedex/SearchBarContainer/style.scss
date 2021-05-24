@@ -1,0 +1,25 @@
+@import "./../../../scss/";
+
+.search-bar-container {
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+  width: 100%;
+  height: 270px;
+}
+
+//Tablet
+.search-bar-container {
+  @include tablet {
+    position: relative;
+    left: -16%;
+    background-color: #313131;
+    flex-direction: row;
+    padding: 30px 30px;
+    width: calc(100% + 31.8%);
+    height: 200px;
+  }
+}

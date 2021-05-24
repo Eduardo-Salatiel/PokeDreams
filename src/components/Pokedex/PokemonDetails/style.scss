@@ -1,0 +1,31 @@
+@import "./../../../scss/index.scss";
+
+.pokemon-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr;
+  min-height: 490px;
+
+  .pokemon-name {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    span {
+      color: $font-gray;
+    }
+  }
+}
+
+//TABLET
+.pokemon-details {
+  @include tablet {
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 70px 1fr;
+
+    .pokemon-name {
+      grid-column: 1 / 3;
+    }
+  }
+}

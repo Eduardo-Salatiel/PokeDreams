@@ -1,0 +1,20 @@
+@import './../../../../scss/index.scss';
+
+.header-menu {
+
+    //Lista
+    &__list {
+        list-style: none;
+        display: flex;
+
+        li {
+            padding: 10px;
+
+            a{
+                text-decoration: none;
+                color: $font-white;
+                font-size: 20px;
+            }
+        }
+    }
+}

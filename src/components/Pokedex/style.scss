@@ -1,0 +1,40 @@
+@import "./../../scss/index.scss";
+
+.pokedex {
+  margin: 190px auto 0 auto;
+  background-color: $bg-white;
+  width: 100%;
+
+  .pokedex-loading {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pokedex-title {
+    font-size: 30px;
+    color: darken($color: #dbdbdb, $amount: 20);
+    font-weight: bold;
+    padding: 30px 15px;
+    margin: 0;
+  }
+}
+
+//FIXED MARGIN
+.pokedex {
+  @media only screen and (min-width: 535px) {
+    margin: 150px auto 0 auto;
+  }
+}
+
+//TABLET
+.pokedex {
+  @include tablet {
+    width: 76%;
+
+    .pokedex-loading {
+      min-height: 490px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import './../../../../scss/index.scss';
+
+.pokedex-image-container {
+    background-color: $bg-soft-gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px 10px 10px;
+    width: calc(100% - 20px);
+    padding: 15px;
+
+    img {
+        width: 100%;
+    }
+}
+
+//TABLET
+.pokedex-image-container {
+   @include tablet {
+    width: 100% 
+   }
+
+}

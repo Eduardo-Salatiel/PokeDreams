@@ -1,0 +1,25 @@
+@import './scss/index.scss';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import "~spinners-react/lib/SpinnerCircular.css";
+
+body {
+  background: #fff url("./assets/img/container_bg.png");
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Flexo-Medium",arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+}
+body, header {
+  min-width: 300px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+

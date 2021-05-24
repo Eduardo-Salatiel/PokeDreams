@@ -1,0 +1,57 @@
+@import "./../../../../scss/index.scss";
+
+.filter-text-search {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+
+  label {
+    color: $font-white;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .campo {
+    position: relative;
+    width: 100%;
+
+    .input-search {
+      outline: none;
+      width: 100%;
+      height: 45px;
+    }
+
+    .input-search-submit {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #ee6b2f;
+      outline: none;
+      border: unset;
+      width: 45px;
+      height: 45px;
+
+      i {
+        color: $font-white;
+        font-weight: bold;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        background-color: darken($color: #ee6b2f, $amount: 15);
+      }
+    }
+  }
+}
+
+//TABLET
+.filter-text-search {
+  @include tablet {
+    width: 40%;
+  }
+}

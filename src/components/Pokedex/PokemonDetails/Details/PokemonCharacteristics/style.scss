@@ -1,0 +1,11 @@
+@import './../../../../../scss/index.scss';
+
+.pokemon-characteristics {
+    background-color: #30a7d7;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 100%;
+    min-height: 200px;
+}

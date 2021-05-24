@@ -1,0 +1,63 @@
+@import "./../../../../scss/index.scss";
+
+.social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  list-style: none;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    padding: 3.5px 0;
+
+    i {
+      font-size: 3rem;
+      color: $font-white;
+    }
+    &::before {
+      font-family: fontAwesome;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 3rem;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
+      height: 100%;
+    }
+  }
+  &.facebook a::before {
+    content: "\f09a";
+    color: #3b5998;
+    border-bottom: 4px solid #3b5998;
+  }
+
+  &.linked a::before {
+    content: "\f0e1";
+    color: #0e76a8;
+    border-bottom: 4px solid #0e76a8;
+  }
+
+  &.git a::before {
+    content: "\f09b";
+    color: #171515;
+    border-bottom: 4px solid #171515;
+  }
+}
+
+.social-icon {
+  @include desktop {
+    a {
+      &::before {
+        height: 0;
+      }
+    }
+
+    
+    &:hover a::before {
+        height: 100%;
+      }
+  }
+}

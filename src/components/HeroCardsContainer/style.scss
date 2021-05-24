@@ -1,0 +1,27 @@
+@import './../../scss/index.scss';
+
+.hero-cards-container {
+    padding: 15px;
+    margin: 190px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+   }
+
+.hero-cards-container {
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(2 , 350px);
+        grid-gap: 25px;
+        margin: 150px auto 0 auto;
+        width: 80%;
+    }
+}
+
+.hero-cards-container {
+    @include desktop {
+        width: 60%;
+    }
+}
